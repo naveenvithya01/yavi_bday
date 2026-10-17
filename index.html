@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#080914">
+<title>A Little Universe Made for You ✨</title>
+<style>
+:root{--bg:#080914;--gold:#e8cf91;--muted:#c6c1d5;--violet:#b7a2ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#191832 0%,#090a18 45%,#05060c 100%);color:#f7f3ff;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.65;animation:twinkle 3s infinite ease-in-out}.star:nth-child(3n){background:var(--gold);animation-duration:4.5s}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.4)}}
+main{position:relative;z-index:1}.screen{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:72px 20px;position:relative}.wrap{width:min(100%,950px);margin:auto;text-align:center}.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-size:clamp(2.6rem,9vw,6.2rem);line-height:1.02;margin:22px 0;color:#fff8e9}h2{font-size:clamp(2rem,6vw,4rem);margin:0 0 16px}.gold{color:var(--gold)}p{line-height:1.8;color:var(--muted);font-size:1rem}.lead{font-size:clamp(1.05rem,3vw,1.35rem)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;margin:20px 7px 0;padding:14px 22px;border-radius:999px;border:1px solid #d6bd7d;background:linear-gradient(135deg,#e8cf91,#b9954b);color:#14101a;font-weight:750;letter-spacing:.06em;text-decoration:none;cursor:pointer;box-shadow:0 0 28px #e8cf9125;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 0 35px #e8cf9150}.btn.secondary{background:#ffffff08;color:#f6e8c1;border-color:#ffffff2a}.orb{width:min(48vw,220px);aspect-ratio:1;margin:0 auto 28px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9d8 0%,#b8a4ff 7%,#7051b9 18%,#241d52 42%,#080914 68%);box-shadow:0 0 55px #9478ff44,0 0 110px #6b52cc25;position:relative;animation:float 6s ease-in-out infinite}.orb:after{content:"";position:absolute;inset:17% -12%;border:1px solid #e8cf9170;border-radius:50%;transform:rotate(-25deg)}@keyframes float{50%{transform:translateY(-10px)}}.hidden{display:none!important}.letter{max-width:680px;margin:28px auto 0;padding:clamp(24px,5vw,48px);border:1px solid #d9c68a55;border-radius:18px;background:linear-gradient(145deg,#ffffff0d,#ffffff03);box-shadow:0 25px 90px #0005;text-align:left}.letter p{color:#eee8f7}.signature{color:var(--gold);font-family:Georgia,serif;font-size:1.25rem}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:32px 0}.photo{padding:7px;border:1px solid #e8cf9140;background:#ffffff08;border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .3s,border-color .3s}.photo:hover{transform:translateY(-5px);border-color:#e8cf91}.photo img{display:block;width:100%;height:240px;object-fit:cover;border-radius:9px}.photo:nth-child(1) img{object-position:center 40%}.caption{font-family:Georgia,serif;color:#f4e5bd;padding:12px 5px 8px;font-size:.96rem}.song-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0}.song{padding:22px 14px;border:1px solid #e8cf9145;background:#ffffff08;border-radius:16px}.song .icon{font-size:1.8rem}.song h3{font-family:Georgia,serif;font-weight:400;color:#f5e6c0}.song small{color:#aaa3bf}.cake{font-size:5rem;filter:drop-shadow(0 0 24px #e8cf9150);animation:float 3s infinite ease-in-out}.fireworks{font-size:2rem;letter-spacing:.5rem;animation:twinkle 1.4s infinite}.footer{padding:30px 16px;text-align:center;color:#77738b;font-size:.8rem}.modal{position:fixed;inset:0;background:#03040def;z-index:10;display:flex;align-items:center;justify-content:center;padding:20px}.modal img{max-width:95vw;max-height:80svh;object-fit:contain;border-radius:12px;border:1px solid #e8cf91}.close{position:absolute;top:20px;right:20px}.tiny{font-size:.78rem;color:#77738b}
+@media(max-width:650px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo img{height:210px}.song-list{grid-template-columns:1fr}.screen{padding:60px 17px}.letter{padding:23px}.photo:last-child:nth-child(odd){grid-column:1/-1}.photo:last-child:nth-child(odd) img{height:270px}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<main>
+<section class="screen" id="home"><div class="wrap">
+<div class="orb" aria-hidden="true"></div><div class="eyebrow">A birthday universe • made with love</div>
+<h1>A Little Universe<br><span class="gold">Made for You</span></h1>
+<p class="lead">Somewhere in this huge universe…<br>there is one person who makes my world feel different.</p>
+<h2 class="gold">Hey, Yavi 🤍</h2><p>Unakkaga oru chinna surprise…</p>
+<button class="btn" onclick="showScene('letter')">✨ ENTER YOUR UNIVERSE →</button>
+</div></section>
+<section class="screen" id="letter"><div class="wrap"><div class="eyebrow">Scene 02 • a little letter</div><h2>A Letter From <span class="gold">Naveen</span></h2><p>A small letter, with a lot of love.</p>
+<div class="letter"><p>Hey, my favourite person, Yavi 🤍</p>
+<p>Happy Birthday, my girl! 🫶🏻</p>
+<p>In this big world, meeting you is one of my favourite things that happened to me.</p>
+<p>Sometimes, words aren't enough to explain how special you are to me. But today, I want to remind you of one thing…</p>
+<p><strong class="gold">You make my world a little more beautiful. ❤️</strong></p>
+<p>Un birthday-la nee romba happy-ah irukkanum. Un smile eppovum ippadiye irukkanum.</p>
+<p>Happy Birthday, Yavi! I hope this new year brings you lovely moments, laughter, and a thousand reasons to smile. 🌙</p>
+<p class="signature">With love, Naveen ♾️</p></div>
+<button class="btn" onclick="showScene('memories')">OUR LITTLE MEMORIES 📸</button>
+</div></section>
+<section class="screen" id="memories"><div class="wrap"><div class="eyebrow">Scene 03 • the heart of this universe</div><h2>Our Little <span class="gold">Memories</span></h2><p class="lead">Every picture has a story… and these are some of my favourites.</p>
+<div class="gallery" id="gallery"></div><p class="gold serif" style="font-size:1.3rem">Sila moments marakka mudiyadhu. 🤍</p><p>My favourite memories have you in them.</p>
+<button class="btn" onclick="showScene('songs')">OUR SONGS 🎧</button>
+</div></section>
+<section class="screen" id="songs"><div class="wrap"><div class="eyebrow">Scene 04 • songs that feel like us</div><h2>Our <span class="gold">Songs</span></h2><p>Three songs. Three different vibes. One special person. ❤️</p>
+<div class="song-list">
+<div class="song"><div class="icon">🤍</div><h3>Kannae Kanmaniye</h3><small>Soft & emotional</small><p>Play this song from your device or music app.</p></div>
+<div class="song"><div class="icon">✨</div><h3>Butta Bomma (Remix)</h3><small>Fun & energetic</small><p>A little beat for your beautiful smile.</p></div>
+<div class="song"><div class="icon">🌙</div><h3>Agasatha</h3><small>Romantic vibes</small><p>For a moment under our own stars.</p></div>
+</div>
+<p class="tiny">Music is not embedded yet. Use your preferred licensed music app to play these songs.</p>
+<button class="btn" onclick="showScene('birthday')">ONE LAST SURPRISE 🎂</button>
+</div></section>
+<section class="screen" id="birthday"><div class="wrap"><div class="eyebrow">Scene 05 • your special day</div><div class="cake">🎂</div><h2>Make a Wish, <span class="gold">Yavi!</span></h2><p class="lead">Close your eyes, make a wish… ✨</p><button class="btn" id="wish" onclick="celebrate()">✨ MAKE A WISH ✨</button>
+<div id="final" class="hidden"><div class="fireworks">✦ ✨ 🎆 ✨ ✦</div><h2 class="gold">Happy Birthday, Yavi! ❤️</h2>
+<div class="letter"><p>Indha universe evlo perusaa irundhaalum, you're someone truly special in my little world.</p><p>I hope your days are full of happiness, your heart feels loved, and your smile never fades.</p><p>Thank you for being you. Today, this little universe is all yours. 🤍</p><p class="signature">Always wishing you the happiest birthday,<br>Naveen ♾️</p></div>
+<p class="gold serif">You are a beautiful part of my universe. 🌌</p></div>
+<button class="btn secondary" onclick="showScene('home')">↺ START AGAIN</button>
+</div></section>
+</main><div class="footer">Made with love • just for Yavi 🤍</div>
+<div id="modal" class="modal hidden" onclick="this.classList.add('hidden')"><button class="btn close">✕ Close</button><img id="modalimg" alt="A memory together"></div>
+<script>
+const starBox=document.getElementById('stars');for(let i=0;i<110;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.opacity=(Math.random()*.8+.2).toFixed(2);starBox.appendChild(s)}
+function showScene(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+const memories=[
+['01.jpg','A moment I’ll always remember. 🤍'],
+['02.jpg','Some smiles become favourite memories. 🫶🏻'],
+['03.jpg','A little moment, a beautiful memory. 🌿'],
+['04.jpg','My favourite memories have you in them. ❤️'],
+['05.jpg','Simple moments, special feelings. ✨'],
+['06.jpg','If I could pause time, I’d keep moments like this. 🤍'],
+['07.jpg','Sila moments marakka mudiyadhu. 🌙'],
+['08.jpg','A little piece of our story. 💌'],
+['09.jpg','And I’m glad our paths crossed. ♾️']
+];
+const gallery=document.getElementById('gallery');
+memories.forEach(([src,caption],i)=>{let card=document.createElement('button');card.className='photo';card.innerHTML=`<img src="${src}" alt="Memory ${i+1}" loading="lazy"><div class="caption">${caption}</div>`;card.onclick=()=>{document.getElementById('modalimg').src=src;document.getElementById('modal').classList.remove('hidden')};gallery.appendChild(card)});
+function celebrate(){document.getElementById('final').classList.remove('hidden');document.getElementById('wish').textContent='Your wish is on its way ✨';for(let i=0;i<45;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.width=(Math.random()*3+2)+'px';s.style.height=s.style.width;s.style.background=i%2?'#e8cf91':'#b7a2ff';s.style.animationDuration=(Math.random()*1.5+1)+'s';starBox.appendChild(s)}}
+</script>
+</body></html>
